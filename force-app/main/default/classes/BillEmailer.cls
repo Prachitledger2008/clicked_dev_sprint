@@ -10,7 +10,7 @@ public with sharing class BillEmailer {
         //Messaging.SingleEmailMessage object.
 
         for(String email : emailsWithBills.keySet()) {
-
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
             //use the following
             //to attach the PDF blob to the email:
             Messaging.EmailFileAttachment attach = new Messaging.EmailFileAttachment();
